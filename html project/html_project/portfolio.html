@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 100px 0 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #FAF0D7;
+            color: #333;
+        }
+
+        .bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F4BFBF;
+            padding: 12px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .bar img {
+            width: 85px;
+            height: auto;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 8px 4px;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: #6B9CC0;
+        }
+
+        .search-container {
+            margin-left: 20px;
+        }
+
+        .search-input {
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            width: 200px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .search-input:focus {
+            width: 250px;
+            border-color: #8CC0DE;
+            outline: none;
+        }
+
+        #header {
+            color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.6)), url(ImgPitBite/ImgPit1.png);
+            height: 330px;
+            padding: 0 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        #header p {
+            font-size: 18px;
+            max-width: 800px;
+            line-height: 1.6;
+        }
+
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .img-row {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin: 30px auto;
+        }
+
+        .img-row img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            transition: 0.3s;
+        }
+
+        .img-row img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+
+
+    <link rel="icon" href="ImgPitBite/PetBite_Logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="bar">
+            <img src="ImgPitBite/PetBite_Logo.png" alt="PetBite Logo">
+            <div class="links">
+                <a href="../home page.html">Home</a>
+                <a href="../About Us.html">About Us</a>
+                <a href="../Products.html">Products</a>
+                <a href="Contact Us.html">Contact</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="../Html-Project/Blog-Section.html">Blog</a>
+                <a href="../Html-Project/Case Studies-Section.html">Pet Wins</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="../Html-Project/Login&Signup-Section.html">Login</a>
+
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search for a product">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>Explore Our Offerings</h1>
+        <p>Discover the wonderful world of pet care with our top-quality products and happy customers.</p>
+    </div>
+
+    <!-- Featured Products -->
+    <div class="section">
+        <h1>Our Featured Products</h1>
+        <p>High-quality pet food crafted for the well-being of your furry companions.</p>
+    </div>
+
+    <div class="img-row">
+        <img src="ImgPitBite/FoodPir1.jfif" alt="FoodPit1">
+        <img src="ImgPitBite/FoodPit3.jfif" alt="FoodPit3">
+    </div>
+
+    <div class="img-row">
+        <img src="ImgPitBite/FoodPit2.jfif" alt="FoodPit2">
+        <img src="ImgPitBite/FoodPit4.jfif" alt="FoodPit4">
+    </div>
+
+    <!-- Happy Customers -->
+    <div class="section">
+        <h1>Happy Pets, Happy Customers</h1>
+        <p>Smiles and wagging tails say it all! Check out our happy customers enjoying our tasty meals.</p>
+    </div>
+
+    <div class="img-row">
+        <img src="ImgPitBite/EatPit1.jfif" alt="PitEat1">
+        <img src="ImgPitBite/EatPit2.jfif" alt="PitEat2">
+    </div>
+
+    <div class="img-row">
+        <img src="ImgPitBite/EatPit3.jfif" alt="EatPit3">
+        <img src="ImgPitBite/EatPit4.jfif" alt="EatPit4">
+    </div>
+
+</body>
+
+</html>

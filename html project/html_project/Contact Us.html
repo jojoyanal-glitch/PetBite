@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #FAF0D7;
+            color: #333;
+        }
+
+        .bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F4BFBF;
+            padding: 12px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .bar img {
+            width: 85px;
+            height: auto;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+            padding: 8px 4px;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: #6B9CC0;
+        }
+
+        .search-container {
+            margin-left: 20px;
+        }
+
+        .search-input {
+            padding: 6px 10px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            width: 200px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .search-input:focus {
+            width: 250px;
+            border-color: #8CC0DE;
+            outline: none;
+        }
+
+        #header {
+            color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(ImgPitBite/ImgPit2.jfif);
+            min-height: 330px;
+            padding: 90px 30px 50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        #header p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: flex-start;
+        }
+
+        .form-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-section input,
+        .form-section textarea {
+            padding: 14px;
+            font-size: 16px;
+            border: 2px solid #F4BFBF;
+            border-radius: 8px;
+            width: 100%;
+            resize: none;
+            outline: none;
+            font-family: inherit;
+            transition: 0.3s;
+        }
+
+        .form-section input:focus,
+        .form-section textarea:focus {
+            border-color: #8CC0DE;
+            box-shadow: 0 0 5px rgba(140, 192, 222, 0.4);
+        }
+
+        .form-section button {
+            background: #8CC0DE;
+            color: white;
+            font-size: 17px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 150px;
+            transition: 0.3s;
+        }
+
+        .form-section button:hover {
+            background: #6B9CC0;
+            transform: translateY(-2px);
+        }
+
+        .map-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .map-section img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #F4BFBF;
+        }
+
+        .contact-info {
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+        function showThankYou() {
+            alert("Thank you for your message! We'll get back to you soon.");
+        }
+    </script>
+
+    <!--Favicon-->
+    <link rel="icon" href="ImgPitBite/PetBite_Logo.png" type="image/png">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="bar">
+            <img src="ImgPitBite/PetBite_Logo.png" alt="PetBite Logo">
+            <div class="links">
+                <a href="../home page.html">Home</a>
+                <a href="../About Us.html">About Us</a>
+                <a href="../Products.html">Products</a>
+                <a href="Contact Us.html">Contact</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="../Html-Project/Blog-Section.html">Blog</a>
+                <a href="../Html-Project/Case Studies-Section.html">Pet Wins</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="../Html-Project/Login&Signup-Section.html">Login</a>
+
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search for a product">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header -->
+    <div id="header">
+        <h1>Connect with Us!</h1>
+        <p>Stay updated with the latest news, special offers, and pet care tips by following us on our social media
+            platforms. Join our community of pet lovers and share your experiences with us!</p>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h1>Visit Our Store</h1>
+            <p>We are here to serve you! Check out our convenient location and business hours to plan your visit.</p>
+        </div>
+
+        <div class="main-content">
+            <div class="form-section">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message" rows="6"></textarea>
+                <button type="submit" onclick="showThankYou()">Submit</button>
+            </div>
+
+            <div class="map-section">
+                <img src="ImgPitBite/mapPitBite.png" alt="Store Map">
+            </div>
+        </div>
+
+        <div class="contact-info">
+            <p>📍 157 Wasfi At-Tall St., Amman - Jordan</p>
+            <p>🕒 Sat-Thu 10am-5pm, Fri 1pm-5pm</p>
+            <p>📱 (+962) 7 8197 ****</p>
+            <p>📧 PitBite@gmail.com</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

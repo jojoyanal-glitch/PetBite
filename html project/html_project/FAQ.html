@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FAQ</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 100px 0 0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #FAF0D7;
+            color: #333;
+        }
+
+        .bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F4BFBF;
+            padding: 12px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        }
+
+        .bar img {
+            width: 85px;
+        }
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 8px 4px;
+            transition: 0.3s;
+        }
+
+        .links a:hover {
+            color: #6B9CC0;
+        }
+
+        #header {
+            color: white;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.6)), url(ImgPitBite/ImgPit3.jfif);
+            height: 330px;
+            padding: 0 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #header h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        #header p {
+            font-size: 18px;
+            max-width: 850px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .container>h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-item input {
+            display: none;
+        }
+
+        .faq-question {
+            display: block;
+            background-color: #F4BFBF;
+            color: #0d47a1;
+            padding: 15px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .faq-question::after {
+            content: "+";
+            position: absolute;
+            right: 20px;
+            font-size: 18px;
+        }
+
+        .faq-item input:checked+.faq-question::after {
+            content: "-";
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            color: #444;
+            transition: max-height 0.4s ease;
+            padding: 0 20px;
+        }
+
+        .faq-item input:checked~.faq-answer {
+            max-height: 200px;
+            padding: 15px 20px;
+        }
+    </style>
+    <link rel="icon" href="ImgPitBite/PetBite_Logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="bar">
+            <img src="ImgPitBite/PetBite_Logo.png" alt="PetBite Logo">
+
+            <div class="links">
+                <a href="../home page.html">Home</a>
+                <a href="../About Us.html">About Us</a>
+                <a href="../Products.html">Products</a>
+                <a href="Contact Us.html">Contact</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="../Html-Project/Blog-Section.html">Blog</a>
+                <a href="../Html-Project/Case Studies-Section.html">Pet Wins</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="../Html-Project/Login&Signup-Section.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div id="header">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find quick answers to the most common questions about our pet food, delivery, and services.</p>
+    </div>
+
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq1" />
+            <label for="faq1" class="faq-question"><span>🐶</span> How long does delivery take?</label>
+            <div class="faq-answer">🐾 Standard shipping takes 3-5 business days. Express options are available during
+                checkout.</div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq2" />
+            <label for="faq2" class="faq-question">🐶 Do you offer grain-free pet food?</label>
+            <div class="faq-answer">🐾 Yes, we offer a variety of grain-free and hypoallergenic options for dogs and
+                cats.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq3" />
+            <label for="faq3" class="faq-question">🐶 Can I return the product if my pet doesn’t like it?</label>
+            <div class="faq-answer">🐾 Absolutely! We have a 14-day return policy. Your pet's satisfaction is our
+                priority.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="faq4" />
+            <label for="faq4" class="faq-question">🐶 Is this food suitable for puppies or kittens?</label>
+            <div class="faq-answer">🐾 Yes, we have specific formulas tailored for puppies and kittens to support growth
+                and health.</div>
+        </div>
+    
+
+            <div class="faq-item">
+            <input type="checkbox" id="faq5" />
+            <label for="faq5" class="faq-question">
+                🐶 Is your pet food vet-approved?
+            </label>
+            <div class="faq-answer">
+                🐾 Yes, all our recipes are reviewed by veterinarians.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
